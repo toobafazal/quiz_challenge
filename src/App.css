@@ -1,0 +1,144 @@
+.parent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(239, 236, 236);
+
+
+}
+
+.main {
+  width: 43vw;
+  min-height: 100vh;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  margin-top: 50px;
+  overflow: hidden;
+  position: relative;
+}
+
+@media only screen and (min-width: 700px) {
+  .main {
+    width: 50vw;
+    min-height: 100vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    margin-top: 50px;
+    overflow: hidden;
+    position: relative;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .main {
+    width: 90vw;
+    min-height: 100vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    margin-top: 50px;
+    overflow: hidden;
+  }
+}
+
+.progressBar {
+  background-color: rgb(108, 175, 8);
+  height: 7px;
+  transition: 0.5s;
+}
+
+.option {
+  border: grey 1px solid;
+  padding: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+
+}
+
+.false {
+  font-weight: bold;
+  color: red;
+  text-align: center;
+  font-size: 25px;
+}
+
+.true {
+  font-weight: bold;
+  color: rgb(108, 175, 8);
+  text-align: center;
+  font-size: 25px;
+}
+
+.btn {
+  padding: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+  text-align: center;
+  background-color: black;
+  margin: 30px;
+}
+
+.resultProgress {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 50px;
+  transition: 0.5s;
+
+}
+
+.wrong {
+  background-color: rgb(240, 4, 4);
+}
+
+.redButton {
+  background-color: rgb(240, 4, 4);
+  color: white;
+  pointer-events: none;
+}
+
+.greenButton {
+  background-color: rgb(4, 110, 4);
+  color: white;
+  pointer-events: none;
+}
+
+.diabledButton {
+  background-color: lightgrey;
+  pointer-events: none;
+}
+
+.position {
+  margin-top: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.passed {
+  margin-top: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.failed {
+  margin-top: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.timeOver {
+  margin-top: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
